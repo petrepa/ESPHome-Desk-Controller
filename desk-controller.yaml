@@ -1,0 +1,92 @@
+esphome:
+  name: desk-controller
+  platform: ESP8266
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+captive_portal:
+
+
+substitutions:
+  device_name: desk-controller
+  friendly_name: Desk Controller
+  
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_pwd
+  ap:
+    ssid: "${device_name}"
+    password: "PASSWORD" # !! CHANGE ME !!
+
+
+
+binary_sensor:
+  # VOLUME KNOB BUTTON ----------------------
+  - platform: gpio
+    pin:
+      number: D6
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "${friendly_name} Volume Switch Button"
+    on_press:
+      - homeassistant.service:
+          service: script.sonos_mute_toggle
+  
+  # KEY BUTTONS ----------------------
+  - platform: gpio
+    pin:
+      number: D1
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "${friendly_name} Button 1"
+  - platform: gpio
+    pin:
+      number: D2
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "${friendly_name} Button 2"
+  - platform: gpio
+    pin:
+      number: D3
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "${friendly_name} Button 3"
+  - platform: gpio
+    pin:
+      number: D4
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "${friendly_name} Button 4"
+    
+sensor:
+  - platform: rotary_encoder
+    name: "${friendly_name} Rotary Encoder"
+    pin_b:
+      number: D7
+      mode: INPUT
+    pin_a:
+      number: D5
+      mode: INPUT
+    on_clockwise:
+      - homeassistant.service:
+          service: media_player.volume_up
+          data:
+            entity_id: media_player.peter_soverom
+      - logger.log: "Turned Clockwise"
+    on_anticlockwise:
+      - homeassistant.service:
+          service: media_player.volume_down
+          data:
+            entity_id: media_player.peter_soverom
+      - logger.log: "Turned Anti Clockwise"
+      
+
+
+

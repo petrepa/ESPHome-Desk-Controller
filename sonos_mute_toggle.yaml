@@ -1,0 +1,22 @@
+alias: Sonos Mute Toggle
+sequence:
+  - choose:
+      - conditions:
+          - condition: template
+            value_template: >-
+              {{is_state_attr('media_player.sonos', 'is_volume_muted',
+              false)}}
+        sequence:
+          - service: media_player.volume_mute
+            target:
+              entity_id: media_player.sonos
+            data:
+              is_volume_muted: true
+    default:
+      - service: media_player.volume_mute
+        target:
+          entity_id: media_player.sonos
+        data:
+          is_volume_muted: false
+mode: single
+
