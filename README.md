@@ -35,3 +35,5 @@ Simple desk controller for controlling volume of a media player and four buttons
 5. Assemble
 
 # Assemble
+
+![nut](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/nut.jpeg)
