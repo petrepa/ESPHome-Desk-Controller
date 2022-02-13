@@ -36,7 +36,7 @@ Simple desk controller for controlling volume of a media player and four buttons
 ![Wiring Diagram](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/wiring_diagram.png)
 
 # How
-1. Print the parts. Insert the M3 nuts into the 3D printed lid.
+1. Print the [parts](https://github.com/petrepa/ESPHome-Desk-Controller/tree/main/models). Insert the M3 nuts into the 3D printed lid.
 2. Solder components. Do not solder the wires to the keyboard switches before you have intserted the switches into the 3D printed parts. Try to use as short wires as you can to make everything fit in the case
 4. Flash Wemos with the [ESPHome code](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/desk-controller.yaml)
 5. Assemble everything. Fasten the rotary knob to the lid. Put a dab of clue on the Wemos ESP8266 chip to fasten it to the case (super glue should do it). Put on the rotary knob and put on your wanted 
