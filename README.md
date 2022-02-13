@@ -46,3 +46,6 @@ Simple desk controller for controlling volume of a media player and four buttons
 ![Complete wiring](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/wiring.png)
 ![Wire tucking](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/wire_tucking.png)
 ![Without knob and caps](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/without_caps.jpg)
+
+# Notes
+Muting and unmuting a Sonos media player requires a bit of templating. [This script takes care of that](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/sonos_mute_toggle.yaml)
