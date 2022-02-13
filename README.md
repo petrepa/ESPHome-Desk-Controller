@@ -1,4 +1,4 @@
-# ESPHome-Desk-Controller
+# Desk Controller for ESPHome
 Simple desk controller for controlling volume of a media player and four buttons used for anything
 | Front                                                                                  | Top                                                                                | Back                                                                                 |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
