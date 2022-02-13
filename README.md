@@ -1,5 +1,5 @@
 # Desk Controller for ESPHome
-Simple desk controller for controlling volume of a media player and four buttons used for anything. Powered by ESPHome.
+Simple desk controller for controlling volume of a media player and four buttons used for anything. Powered by [ESPHome](https://esphome.io/).
 | Front                                                                                  | Top                                                                                | Back                                                                                 |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | ![Front](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/front.jpg) | ![Top](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/top.jpg) | ![Back](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/back.jpg) |
