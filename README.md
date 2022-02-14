@@ -3,11 +3,14 @@ Simple desk controller for controlling volume of a media player and four buttons
 | Front                                                                                  | Top                                                                                | Back                                                                                 |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | ![Front](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/front.jpg) | ![Top](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/top.jpg) | ![Back](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/back.jpg) |
+
 ## Features
 * Rotary knob to controll volume of media player
   * Rotary knob can mute or play/pause media player
 * Four buttons which can do what ever you want
 * Sleek design
+
+[Tweet thread showing of some of the features](https://twitter.com/petrepa/status/1492845262397747200?s=20&t=XrHxkKNUZLxyN6M17T5Kxw)
 
 # Parts needed
 | Part                  | #     | Comment                                        |
