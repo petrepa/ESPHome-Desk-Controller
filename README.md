@@ -1,5 +1,6 @@
 # Desk Controller for ESPHome
 Simple desk controller for controlling volume of a media player and four buttons used for anything. Powered by [ESPHome](https://esphome.io/).
+
 | Front                                                                                  | Top                                                                                | Back                                                                                 |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | ![Front](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/front.jpg) | ![Top](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/top.jpg) | ![Back](https://github.com/petrepa/ESPHome-Desk-Controller/blob/main/media/back.jpg) |
@@ -13,6 +14,7 @@ Simple desk controller for controlling volume of a media player and four buttons
 [Tweet thread showing of some of the features](https://twitter.com/petrepa/status/1492845262397747200?s=20&t=XrHxkKNUZLxyN6M17T5Kxw)
 
 # Parts needed
+
 | Part                  | #     | Comment                                        |
 |-----------------------|-------|------------------------------------------------|
 | Wemos D1 Mini         | 1 pcs | ESP8266 development board                      |
@@ -24,6 +26,7 @@ Simple desk controller for controlling volume of a media player and four buttons
 | M3 nut                | 4 pcs |                                                |
 
 ## Pinout
+
 | Wemos D1 Mini | Rotary Encoder | Buttons        | Cable color |
 |---------------|----------------|----------------|-------------|
 | 3V3           | VCC            |                | Red         |
